@@ -105,8 +105,9 @@ nav,
 section {
   display: block;
 }
+
 body {
-  line-height: 1;
+  line-height: 1.4;
 }
 ol,
 ul {
@@ -136,6 +137,7 @@ html,
 body {
   height: 100%;
   font-family: "Roboto", sans-serif;
+  color: black;
 }
 
 h1,
@@ -164,18 +166,23 @@ p {
   margin-bottom: 20px;
   border-bottom: 1px dashed black;
 }
-
-nav {
+.header-content {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  height: 10vh;
+  justify-content: stretch;
+}
+nav {
+  width: 100%;
+  margin: 0 0 1em 0;
+  padding: 0;
+  display: flex;
+  justify-content: stretch;
+  height: 100%;
+  width: 150%;
 }
 
-.logo {
-  width: 20%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.logo img {
+  width: 100%;
 }
 
 .links {
@@ -190,10 +197,19 @@ nav a {
   text-decoration: none;
 }
 
+.p-container {
+  width: 100%;
+
+  padding-bottom: 20px;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+
 .top-content .text-container {
   width: 48%;
   padding: 0 1%;
   padding-bottom: 20px;
+  margin-top: 2%;
 }
 
 .middle-content {
@@ -201,6 +217,68 @@ nav a {
   border-bottom: 1px dashed black;
 }
 
+.middle-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: space-between;
+  width: 50%;
+
+  padding-bottom: 20px;
+  padding-left: 0;
+}
+.middle-container h2 {
+  padding-top: 4%;
+}
+
+.middle2 {
+  padding: 5%;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
+}
+
+.middle1 {
+  padding: 5%;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
+}
+
+.content2 {
+  padding-bottom: 5%;
+  margin-bottom: 2%;
+  border-bottom: 1px dashed black;
+}
+
+.content21 {
+  padding-top: 10%;
+}
+
+.content12 {
+  padding-top: 10%;
+}
+
+.content1 {
+  padding-bottom: 5%;
+  margin-bottom: 2%;
+  border-bottom: 1px dashed black;
+}
+
+.bottom {
+  margin-left: 3%;
+}
+.content3 {
+  width: 100%;
+  padding-bottom: 20px;
+}
+
+button {
+  margin: 3%;
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  font-size: 18px;
+}
 .middle-content h2 {
   padding: 0 2%;
   margin-bottom: 0;
@@ -209,7 +287,9 @@ nav a {
 .middle-content .boxes {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
+  align-items: stretch;
+  margin: 5%;
 }
 
 .middle-content .boxes .box {
@@ -223,37 +303,82 @@ nav a {
   justify-content: center;
 }
 
+.boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .box1 {
   background-color: teal;
+  padding: 6% 4%;
+  margin: 3% 3%;
 }
 
 .box2 {
   background-color: gold;
+  padding: 6% 4%;
+  margin: 3% 3%;
 }
 
 .box3 {
   background-color: cadetblue;
+  padding: 6% 4%;
+  margin: 3% 3%;
 }
 .box4 {
   background-color: coral;
+  padding: 6% 4%;
+  margin: 3% 3%;
 }
 .box5 {
   background-color: crimson;
+  padding: 6% 4%;
+  margin: 3% 3%;
 }
 .box6 {
   background-color: forestgreen;
+  padding: 6% 4%;
+  margin: 3% 3%;
 }
 .box7 {
   background-color: darkorchid;
+  padding: 6% 4%;
+  margin: 3% 3%;
 }
+
 .box8 {
   background-color: hotpink;
+  padding: 6% 4%;
+  margin: 3% 3%;
 }
+
 .box9 {
   background-color: indigo;
+  padding: 6% 4%;
+  margin: 3% 3%;
 }
 .box10 {
   background-color: dodgerblue;
+  padding: 6% 4%;
+  margin: 3% 3%;
+}
+
+.bottom-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2%;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  align-content: center;
+  background-color: black;
 }
 
 footer nav {
@@ -261,11 +386,12 @@ footer nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 2%;
+  padding: 8px 2%;
   font-size: 14px;
 }
 
 footer nav a {
+  text-align: center;
   color: white;
   text-decoration: none;
 }
